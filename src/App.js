@@ -82,24 +82,20 @@ export default function Stopwatch() {
           <button
             onClick={handleStop}
             className={`px-4 py-2 rounded-lg font-bold transition-all duration-300
-              ${
-                isActive
-                  ? "bg-red-500 text-white scale-105 shadow-lg"
-                  : "text-red-500"
-              }
-              hover:bg-red-100 hover:scale-105 group-hover:bg-red-50`}
+    ${isActive ? "bg-red-500 text-white scale-105 shadow-lg" : "text-red-500"}
+    hover:bg-red-100 hover:scale-105`}
           >
             Durdur
           </button>
           <button
             onClick={handleStart}
             className={`px-4 py-2 rounded-lg font-bold transition-all duration-300
-              ${
-                !isActive
-                  ? "bg-green-500 text-white scale-105 shadow-lg"
-                  : "text-green-500"
-              }
-              hover:bg-green-100 hover:scale-105 group-hover:bg-green-50`}
+    ${
+      !isActive
+        ? "bg-green-500 text-white scale-105 shadow-lg"
+        : "text-green-500"
+    }
+    hover:bg-green-100 hover:scale-105`}
           >
             Başlat
           </button>
